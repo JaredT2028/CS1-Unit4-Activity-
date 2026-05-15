@@ -1,2 +1,23 @@
+#emoji {
+    font-size: 100px;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
 
+.animated {
+    opacity: 1 !important;
+    animation: zigzag 1s infinite linear;
+
+}
+
+@keyframes zigzag {
+    0% { transform: translate(0px, 0px); }
+    20% { transform: translate(800px, 5px); }
+    60% { transform: translate(3px, 900px); }
+    80% { transform: translate(50px, 100px); }
+    100% { transform: translate(300px, 500px); }
+
+}
 
